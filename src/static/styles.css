@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.home .container {
+    background-image: url('images/bg1.jpg'); /* Replace with your home page image path */
+    flex: auto;
+}
+
+body.predict .container {
+    background-image: url('images/bg2.jpg'); /* Replace with your predict page image path */
+    flex: auto;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px; /* Increased width for better fit */
+    width: 100%;
+    max-height: 80vh; /* Adjusted height */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    text-align: center;
+}
+
+.box {
+    text-align: left; /* Align labels to the start */
+    margin-bottom: 15px;
+}
+
+.box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.box input,
+.box select {
+    width: 100%; /* Ensure inputs take full width of the box */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+.box input:focus,
+.box select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+    transform: scale(1.05);
+}
+
+.box input[type='radio'] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.box input:hover,
+.box select:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+.region-box {
+    background: rgba(200, 200, 200, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left; /* Align labels to the start */
+    margin-bottom: 10px; /* Reduced margin to avoid scrolling */
+}
+
+.region-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.region-option {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.region-option label {
+    margin-left: 5px; /* Space between radio button and label */
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website - Predict</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body class="predict">
+    <div class="container">
+        <div class="content">
+            <form class="form-box" method="POST" action="/predict">
+                <div class="box">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="box">
+                    <label for="gender">Select Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="bmi">BMI</label>
+                    <input type="number" id="bmi" name="bmi" required>
+                </div>
+                <div class="box">
+                    <label for="children">Number of Children</label>
+                    <input type="number" id="children" name="children" required>
+                </div>
+                <div class="box">
+                    <label for="smoker">Are you a smoker?</label>
+                    <select id="smoker" name="smoker" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="box region-box">
+                    <label>Region</label>
+                    <div class="region-options">
+                        <div class="region-option">
+                            <input type="radio" id="northeast" name="region" value="northeast" required>
+                            <label for="northeast">Northeast</label>
+                        </div>
+                        <div class="region-option">
+                            <input type="radio" id="northwest" name="region" value="northwest" required>
+                            <label for="northwest">Northwest</label>
+                        </div>
+                        <div class="region-option">
+                            <input type="radio" id="southeast" name="region" value="southeast" required>
+                            <label for="southeast">Southeast</label>
+                        </div>
+                        <div class="region-option">
+                            <input type="radio" id="southwest" name="region" value="southwest" required>
+                            <label for="southwest">Southwest</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
