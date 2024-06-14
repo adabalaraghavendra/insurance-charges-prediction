@@ -12,7 +12,7 @@ Predict insurance charges using a machine learning model based on the RandomFore
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/insurance-charges-prediction.git
+   git clone https://github.com/adabalaraghavendra/insurance-charges-prediction.git
    cd insurance-charges-prediction
 2. Create and activate a virtual environment:
     ```sh
